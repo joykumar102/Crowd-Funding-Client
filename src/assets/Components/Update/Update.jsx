@@ -25,7 +25,7 @@ const Update = () => {
                 console.log(UpadtedCampaing);
     
                 // send data fetch data
-                fetch(`http://localhost:5000/addCampaing/${_id}`, {
+                fetch(`https://crowd-funding-server-sigma.vercel.app/addCampaing/${_id}`, {
                     method:'PUT',
                     headers: {
                         'content-type': 'application/json'

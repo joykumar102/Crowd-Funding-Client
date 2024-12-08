@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SectionTwo = () => {
     return (
@@ -32,7 +33,8 @@ const SectionTwo = () => {
           <div>
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">Help Us Spread Funding</h3>
             <p className="text-lg text-gray-600 mb-6">To effectively spread your crowdfunding campaign and get more support, it's essential to reach as many people as possible and inspire them to contribute.</p>
-           <button className="btn btn-accent">Donate Now</button>
+          <Link to="/AddNewCamping"><button className="btn btn-accent">Donate Now</button></Link>
+           
           </div>
         </div>
         </div>

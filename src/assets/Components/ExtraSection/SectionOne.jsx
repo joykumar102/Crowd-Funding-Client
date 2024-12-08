@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionOne = () => {
     return (
-        <div className='mx-auto mt-10 py-10 px-10  space-y-8 bg-gray-500'>
+        <div className='mx-auto mt-10 py-10 px-10  space-y-8 '>
         <h2 className='text-4xl text-center text-gray-600 font-bold'>How Crowdfunding Works</h2>
         <p className='text-xl text-center px-10'>Crowdfunding is a way to raise money for a specific cause or project by gathering small contributions from a large number of people, usually through an online platform.</p>
         <div className='space-y-4 lg:flex lg:justify-between gap-5 p-10 border-2 rounded-xl '>

@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Theme from '../Themes/Theme';
 import { AuthContext } from '../../../Provider/AuthProvider';
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip';
 
 
 const Navbar = () => {
@@ -63,9 +65,11 @@ const Navbar = () => {
                     {
                         user ?
                             <div className='flex items-center gap-4'>
+                                <Tooltip className='z-10' anchorSelect="#showTooltip" content={user.displayName}>
+                                </Tooltip>
                                 <div className="avatar online">
                                     <div className="w-16 rounded-full">
-                                        <Link><img src={user.photoURL} /></Link>
+                                        <Link ><img id="showTooltip" src={user.photoURL} /></Link>
                                     </div>
                                 </div>
                                 <div><button onClick={handleLogOut} className="btn btn-accent">Log Out</button></div>

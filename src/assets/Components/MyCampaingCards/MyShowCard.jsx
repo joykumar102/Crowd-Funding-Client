@@ -22,7 +22,7 @@ const MyShowCard = ({ myCard, myCampaignCadrs, setMyCampaignCadrs }) => {
                 if (result.isConfirmed) {
                
              
-                fetch(`http://localhost:5000/addCampaing/${_id}`, {
+                fetch(`https://crowd-funding-server-sigma.vercel.app/addCampaing/${_id}`, {
                     method: 'DELETE'
                 })
                 .then(res => res.json())
@@ -52,7 +52,7 @@ const MyShowCard = ({ myCard, myCampaignCadrs, setMyCampaignCadrs }) => {
                     <tr>
                         <th> Title</th>
                         <th>Type</th>
-                        <th>Donation</th>
+                        <th>Deadline</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -74,7 +74,7 @@ const MyShowCard = ({ myCard, myCampaignCadrs, setMyCampaignCadrs }) => {
                         <td>
                             <span className="badge badge-ghost badge-sm">{campaingType}</span>
                         </td>
-                        <td>{donationAmount} Tk.</td>
+                        <td>{deadLine} </td>
                         <th>
                             <Link to={`/Update/${_id}`}><button className="btn mr-5 hover:bg-red-400 bg-gradient-to-r from-blue-700  to-pink-300 text-white border-none">Update</button></Link>
                             <button onClick={() => handleDelete(_id)} className="btn  hover:bg-red-400 bg-gradient-to-r from-blue-700  to-pink-300 text-white border-none">Delete</button>

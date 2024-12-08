@@ -5,6 +5,7 @@ const AllCampaingCardShow = ({allCard}) => {
 
     const {_id, photo, campaignTitle, campaingType, 
         donationAmount, userName, userEmail, deadLine, description} = allCard;
+        
     return (
         <div>
             <div className="overflow-x-auto">
@@ -36,7 +37,7 @@ const AllCampaingCardShow = ({allCard}) => {
                         <td>  
                             <span className="badge badge-ghost badge-sm">{campaingType}</span>
                         </td>
-                        <td>{deadLine}</td>
+                        <td>{donationAmount} Tk.</td>
                         <th>
                             <Link to={`/Details/${_id}`}><button className="btn mr-5 hover:bg-red-400 bg-gradient-to-r from-blue-700  to-pink-300  text-white border-none">See More</button></Link>
 

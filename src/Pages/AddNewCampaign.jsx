@@ -21,7 +21,7 @@ const AddNewCampaign = () => {
             console.log(newCampaing);
 
             // send data fetch data
-            fetch('http://localhost:5000/addCampaing', {
+            fetch('https://crowd-funding-server-sigma.vercel.app/addCampaing', {
                 method:'POST',
                 headers: {
                     'content-type': 'application/json'

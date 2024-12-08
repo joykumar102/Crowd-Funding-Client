@@ -15,6 +15,7 @@ import DetailsPage from "../assets/Components/DetailsPage/DetailsPage";
 import Update from "../assets/Components/Update/Update";
 import DetailsHome from "../assets/Components/DetailsHome/DetailsHome";
 
+
 const routes = createBrowserRouter([
     {
         path: '/',
@@ -24,27 +25,27 @@ const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/addCampaing'),
+                loader: () => fetch('https://crowd-funding-server-sigma.vercel.app/addCampaingData'),
             },
             {
                 path: '/AllCampaing',
                 element: <AllCampaign></AllCampaign>,
-                loader: () => fetch('http://localhost:5000/addCampaing'),
+                loader: () => fetch('https://crowd-funding-server-sigma.vercel.app/addCampaing'),
             },
-           {
-            path: '/AddNewCamping',
-            element: <PraviteRoutes><AddNewCampaign></AddNewCampaign></PraviteRoutes>,
-           },
-           {
-            path: '/MyCampaing',
-            element: <PraviteRoutes><MyCampaign></MyCampaign></PraviteRoutes>,
-            loader: () => fetch('http://localhost:5000/addCampaing'),
-            
-           },
+            {
+                path: '/AddNewCamping',
+                element: <PraviteRoutes><AddNewCampaign></AddNewCampaign></PraviteRoutes>,
+            },
+            {
+                path: '/MyCampaing',
+                element: <PraviteRoutes><MyCampaign></MyCampaign></PraviteRoutes>,
+                loader: () => fetch('https://crowd-funding-server-sigma.vercel.app/addCampaing'),
+
+            },
             {
                 path: '/MyDonation',
                 element: <PraviteRoutes><MyDonations></MyDonations></PraviteRoutes>,
-                loader: () => fetch('http://localhost:5000/addCampaing'),
+                loader: () => fetch('https://crowd-funding-server-sigma.vercel.app/addCampaing'),
             },
             {
                 path: '/Login',
@@ -61,21 +62,23 @@ const routes = createBrowserRouter([
             {
                 path: '/Details/:id',
                 element: <PraviteRoutes><DetailsPage></DetailsPage></PraviteRoutes>,
-                loader: ({params}) => fetch(`http://localhost:5000/addCampaing/${params.id}`),
+                loader: ({ params }) => fetch(`https://crowd-funding-server-sigma.vercel.app/${params.id}`),
             },
             {
                 path: '/DetailsHome/:id',
                 element: <PraviteRoutes><DetailsHome></DetailsHome></PraviteRoutes>,
-                loader: ({params}) => fetch(`http://localhost:5000/addCampaing/${params.id}`),
+                loader: ({ params }) => fetch(`https://crowd-funding-server-sigma.vercel.app/addCampaing/${params.id}`),
             },
             {
                 path: '/Update/:id',
                 element: <Update></Update>,
-                loader: ({params}) => fetch(`http://localhost:5000/addCampaing/${params.id}`),
+                loader: ({ params }) => fetch(`https://crowd-funding-server-sigma.vercel.app/addCampaing/${params.id}`),
             },
-           
+            
+            
+
         ]
-       
+
     }
 ])
 

@@ -31,6 +31,8 @@ const DetailsPage = () => {
                 </div>
             </div>
         </div>
+
+        
     );
 };
 

@@ -62,7 +62,7 @@ const routes = createBrowserRouter([
             {
                 path: '/Details/:id',
                 element: <PraviteRoutes><DetailsPage></DetailsPage></PraviteRoutes>,
-                loader: ({ params }) => fetch(`https://crowd-funding-server-sigma.vercel.app/${params.id}`),
+                loader: ({ params }) => fetch(`https://crowd-funding-server-sigma.vercel.app/addCampaing/${params.id}`),
             },
             {
                 path: '/DetailsHome/:id',

@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="lg:px-10 px-3 mx-auto  bg-base-100 bg-opacity-50 sticky top-0 z-50 backdrop-blur-lg">
+        <div className="lg:px-10 px-3 mx-auto  bg-gray-300 bg-opacity-50 sticky top-0 z-50 backdrop-blur-lg">
             <div className="navbar  ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -78,7 +78,7 @@ const Navbar = () => {
                             :
                             <div>
                                 <Link to='/Login'><button className="btn btn-accent">LogIn</button></Link>
-                                <Link to='/Register'> <button className="btn btn-accent">Register</button></Link>
+                                
                             </div>
                     }
 

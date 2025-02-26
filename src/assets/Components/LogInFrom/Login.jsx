@@ -35,16 +35,16 @@ const Login = () => {
 
     }
     return (
-      <div className="hero  min-h-screen">
+      <div className="hero  mb-10">
             <div className="">
                 <h2 className='text-4xl text-center mb-10 font-semibold'>Log in</h2>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div className="card border-2 w-full  ">
                     <form onSubmit={handleLogIn} className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-lg">Email</span>
                             </label>
-                            <input type="email" placeholder="email" name='email' className="input input-bordered" required />
+                            <input type="email" placeholder="email" name='email' className="input input-bordered lg:w-96" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -52,7 +52,7 @@ const Login = () => {
                             </label>
                             <input type="password"
                                 name='password'
-                                placeholder="password" className="input input-bordered" required />
+                                placeholder="password" className="input input-bordered lg:w-96" required />
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
@@ -61,8 +61,8 @@ const Login = () => {
                             <button className="btn btn-primary">Login</button>
                         </div>
                     </form>
-                    <p className='px-4 mb-4'>New to this website ? please <Link to="/Register">Register</Link>.</p>
-                    <button onClick={handleGoogleSingIn} className='btn btn-accent'>Google Log in</button>
+                    <p className='px-10 mb-4'>New to this website ? please <Link to="/Register">Register</Link>.</p>
+                    <button onClick={handleGoogleSingIn} className='btn btn-accent mb-8 mx-7'>Google Log in</button>
                 </div>
             </div>
         </div>

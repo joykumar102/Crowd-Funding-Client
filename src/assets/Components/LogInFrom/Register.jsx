@@ -38,28 +38,28 @@ const Register = () => {
         })
     }
     return (
-        <div className="hero  min-h-screen">
+        <div className="hero  ">
         <div className="">
         <h2 className='text-4xl font-semibold text-center mb-10'>Register Now</h2>
-            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">   
+            <div className=" border-2 rounded-xl">   
                 <form  onSubmit={handleRegister} className="card-body">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-lg">Name</span>
                         </label>
-                        <input type="text" name='name' placeholder="name"  className="input input-bordered" required />
+                        <input type="text" name='name' placeholder="name"  className="input input-bordered lg:w-96" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-lg">Email</span>
                         </label>
-                        <input type="email"  name='email' placeholder="email" className="input input-bordered" required />
+                        <input type="email"  name='email' placeholder="email" className="input input-bordered lg:w-96" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-lg">Photo URL</span>
                         </label>
-                        <input type="text"  name='photo' placeholder="photo url" className="input input-bordered" required />
+                        <input type="text"  name='photo' placeholder="photo url" className="input input-bordered lg:w-96" required />
                     </div>
                     <div className="form-control relative">
                         <label className="label">

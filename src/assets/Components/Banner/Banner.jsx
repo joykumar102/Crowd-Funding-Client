@@ -2,15 +2,15 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='mx-auto py-5  '>
+        <div className='mx-auto py-10'>
 
-            <div className='text-center px-20 py-10 space-y-5 pb-20'>
-                <h2 className='text-5xl font-bold'>Crowd Funding</h2>
-                <p className='text-xl font-semibold'>
+            <div className='max-w-5xl mx-auto text-center px-5 py-10 space-y-5 pb-20'>
+                <h2 className='lg:text-5xl text-4xl font-bold'>Crowd Funding</h2>
+                <p className='lg:text-xl  font-semibold'>
                     Crowdfunding is a method of raising funds for a project, business, or cause by collecting small amounts of money from a large number of people, typically via online platforms. It’s a powerful way to leverage the collective support of a community, reach potential supporters globally, and bring innovative ideas to life.</p>
             </div>
 
-            <div className='w-11/12 mx-auto border-2 p-5 rounded-xl'>
+            <div className='lg:w-11/12 mx-auto  p-5 rounded-xl'>
 
 
                 <div className="carousel rounded-xl">

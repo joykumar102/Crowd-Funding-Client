@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="px-10 mx-auto  bg-base-100 bg-opacity-50 sticky top-0 z-50 backdrop-blur-lg">
+        <div className="lg:px-10 px-3 mx-auto  bg-base-100 bg-opacity-50 sticky top-0 z-50 backdrop-blur-lg">
             <div className="navbar  ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -44,11 +44,11 @@ const Navbar = () => {
                             <Link to='/MyDonation'>My Donations</Link>
                         </ul>
                     </div>
-                    <div className="pt-2 flex gap-2">
+                    <div className="pt-2 flex gap-2 items-center">
                         <Link to='/'>
-                            <img className='w-20 border rounded-full' src="https://i.ibb.co.com/y4fyhFd/crowd-funding-concept-3446-515.jpg" alt="" />
+                            <img className='lg:w-20 w-10 border rounded-full ' src="https://i.ibb.co.com/y4fyhFd/crowd-funding-concept-3446-515.jpg" alt="" />
                         </Link>
-                        <h2 className='text-2xl font-bold py-5'>Crowd Funding</h2>
+                        <h2 className='lg:text-2xl text-sm font-bold '>Crowd Funding</h2>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

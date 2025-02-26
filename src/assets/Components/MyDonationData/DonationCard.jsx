@@ -10,7 +10,7 @@ const DonationCard = () => {
         <div>
            
 
-            <div  className='lg:grid lg:grid-cols-3 space-y-5 border-2 w-11/12 mx-auto p-10 gap-10'>
+            <div  className='lg:grid lg:grid-cols-3  lg:w-11/12 mx-auto px-5 gap-10'>
             {
                 donationCard.map(donate => <DonationShow 
                 key={donate._id}

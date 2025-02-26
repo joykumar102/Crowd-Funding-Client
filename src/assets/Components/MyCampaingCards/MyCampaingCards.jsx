@@ -11,7 +11,7 @@ const MyCampaingCards = () => {
     return (
 
         <div>
-            <div className=' border-2 w-11/12 mx-auto p-10 gap-5'>
+            <div className='w-11/12 mx-auto p-10 gap-5'>
                 {
                     myCampaignCadrs.map(myCard => <MyShowCard
                         kye={myCard._id}

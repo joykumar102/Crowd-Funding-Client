@@ -6,7 +6,7 @@ const ShowCard = ({addCamp}) => {
     const {_id, photo, campaignTitle, campaingType, 
         donationAmount, userName, userEmail, deadLine, description} = addCamp;
     return (
-        <div className='w-11/12 mx-auto '>
+        <div className='space-y-5'>
               <div className="card bg-base-100  shadow-xl ">
                 <figure>
                     <img

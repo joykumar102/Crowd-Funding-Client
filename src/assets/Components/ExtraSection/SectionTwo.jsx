@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const SectionTwo = () => {
     return (
-        <div className='py-16 px-20 bg-sky-100'>
+        <div className='py-16 px-5 '>
            <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Your Donation Makes a Difference</h2>
           <p className="text-lg text-gray-600 mb-12">Your Donation Makes a Difference" is a powerful phrase that emphasizes the impact of individual contributions in collective fundraising efforts. Crowdfunding is often used to gather funds for a variety of causes, including charitable initiatives, startup businesses, medical expenses, community projects, and more. </p>
